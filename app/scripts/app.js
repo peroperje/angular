@@ -8,5 +8,10 @@
  *
  * Main module of the application.
  */
-angular
-  .module('angularApp', []);
+angular.module('angularApp', [
+        'ngCookies',
+        'ngResource',
+        /*'ngSanitize',*/
+        'ngRoute',
+        'ui.sortable'
+    ]);

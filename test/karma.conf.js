@@ -18,11 +18,16 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'bower_components/angular/angular.js',
-      'bower_components/angular-mocks/angular-mocks.js',
-      'app/scripts/**/*.js',
-      'test/mock/**/*.js',
-      'test/spec/**/*.js'
+        'app/bower_components/angular/angular.js',
+        'app/bower_components/angular-mocks/angular-mocks.js',
+        'app/bower_components/angular-cookies/angular-cookies.js',
+        'app/bower_components/angular-resource/angular-resource.js',
+        'app/bower_components/angular-route/angular-route.js',
+        'app/bower_components/angular-ui-sortable/sortable.js',
+        'app/scripts/*.js',
+        'app/scripts/**/*.js',
+        'test/mock/**/*.js',
+        'test/spec/**/*.js'
     ],
 
     // list of files / patterns to exclude
@@ -57,9 +62,9 @@ module.exports = function(config) {
 
     // level of logging
     // possible values: LOG_DISABLE || LOG_ERROR || LOG_WARN || LOG_INFO || LOG_DEBUG
-    logLevel: config.LOG_INFO,
+    logLevel: config.LOG_INFO
 
-    // Uncomment the following lines if you are using grunt's server to run the tests
+      // Uncomment the following lines if you are using grunt's server to run the tests
     // proxies: {
     //   '/': 'http://localhost:9000/'
     // },
