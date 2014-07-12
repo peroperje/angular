@@ -1,6 +1,17 @@
 body {
     padding-top: 50px;
 }
+
+@media (min-width: 979px)  {
+    .container {
+        width:960px;
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+     .container {
+        width:744px;
+    }
+}
 .starter-template {
     padding: 40px 15px;
     text-align: center;
