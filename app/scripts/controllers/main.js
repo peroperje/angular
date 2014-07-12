@@ -7,8 +7,13 @@
  * # MainCtrl
  * Controller of the angularApp
  */
-angular.module('angularApp').controller('MainCtrl', function ($scope) {
-        $scope.todos = ['Item 1', 'Item 2', 'Item 3','Item 4'];
+angular.module('angularApp').controller('MainCtrl', function ($scope,localStorageService) {
+        var todosInStore = localStorageService.get('todos');
+        $scope.todos = todosInStore && todosInStore.split('\n') || [];
+
+        $scope.$watch('todos', function () {
+            localStorageService.add('todos', $scope.todos.join('\n'));
+        }, true);
         /**
          * Add item to todos liss
          */
