@@ -35,7 +35,7 @@
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#staticPage">About</a></li>
+                    <li><a href="#/pages">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div><!--/.nav-collapse -->
@@ -43,11 +43,10 @@
     </div>
     <div class="container">
 
+        <div ng-view=""></div>
 
-      <div ng-include="'views/main.html'" ng-controller="MainCtrl"></div>
-
-      <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+      <div class="footer" style="margin-top: 5%;">
+        <p class="pull-right"><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
       </div>
     </div>
 
@@ -89,7 +88,7 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/staticpage.js"></script>
+        <script src="scripts/controllers/pages.js"></script>
         <!-- endbuild -->
 </body>
 </html>

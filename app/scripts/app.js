@@ -29,9 +29,9 @@ angular.module('angularApp', [
                 templateUrl: 'views/about.html',
                 controller: 'AboutCtrl'
             })
-            .when('/staticPage', {
-              templateUrl: 'views/staticpage.html',
-              controller: 'StaticpageCtrl'
+            .when('/pages', {
+              templateUrl: 'views/pages.html',
+              controller: 'PagesCtrl'
             })
             .otherwise({
                 redirectTo: '/'
