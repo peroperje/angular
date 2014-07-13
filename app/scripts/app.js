@@ -25,13 +25,13 @@ angular.module('angularApp', [
                 templateUrl: 'views/main.html',
                 controller: 'MainCtrl'
             })
-            .when('/about', {
-                templateUrl: 'views/about.html',
-                controller: 'AboutCtrl'
-            })
             .when('/pages', {
               templateUrl: 'views/pages.html',
               controller: 'PagesCtrl'
+            })
+            .when('/contact', {
+              /*templateUrl: 'views/contact.html',*/
+                redirectTo: '/'
             })
             .otherwise({
                 redirectTo: '/'
